@@ -70,7 +70,11 @@ const struct cntry_locales_custom translate_custom_table[] = {
 	{"ES", "ES", 1},
 	{"FI", "FI", 1},
 	{"FR", "FR", 1},
+#ifdef BCM4335_CHIP
+	{"GB", "GB", 6},
+#else
 	{"GB", "GB", 1},
+#endif
 	{"GR", "GR", 1},
 	{"HR", "HR", 1},
 	{"HU", "HU", 1},
@@ -84,7 +88,9 @@ const struct cntry_locales_custom translate_custom_table[] = {
 	{"LT", "LT", 1},
 	{"LU", "LU", 1},
 	{"LV", "LV", 1},
+#ifndef BCM4330_CHIP
 	{"MA", "MA", 1},
+#endif
 	{"MT", "MT", 1},
 	{"MX", "MX", 1},
 	{"NL", "NL", 1},
@@ -96,7 +102,9 @@ const struct cntry_locales_custom translate_custom_table[] = {
 	{"SE", "SE", 1},
 	{"SI", "SI", 1},
 	{"SK", "SK", 1},
+#ifndef BCM4330_CHIP
 	{"TR", "TR", 7},
+#endif
 	{"TW", "TW", 2},
 	{"IR", "XZ", 11},	/* Universal if Country code is IRAN, (ISLAMIC REPUBLIC OF) */
 	{"SD", "XZ", 11},	/* Universal if Country code is SUDAN */
@@ -107,21 +115,48 @@ const struct cntry_locales_custom translate_custom_table[] = {
 	{"MH", "XZ", 11},	/* Universal if Country code is MARSHALL ISLANDS */
 	{"PK", "XZ", 11},	/* Universal if Country code is PAKISTAN */
 #ifdef BCM4334_CHIP
-  {"RU", "RU", 13},
-  {"SG", "SG", 4},
-  {"US", "US", 46},
-  {"UA", "UA", 8},
-  {"CO", "CO", 4},
-  {"ID", "ID", 1},
-  {"LA", "LA", 1},
-  {"LB", "LB", 2},
-  {"VN", "VN", 4},
+	{"RU", "RU", 13},
+	{"SG", "SG", 4},
+	{"US", "US", 46},
+	{"UA", "UA", 8},
+	{"CO", "CO", 4},
+	{"ID", "ID", 1},
+	{"LA", "LA", 1},
+	{"LB", "LB", 2},
+	{"VN", "VN", 4},
 #endif
 #ifdef BCM4330_CHIP
 	{"RU", "RU", 13},
 	{"US", "US", 5},
 	{"UA", "UY", 0},
 	{"AD", "AL", 0},
+	{"CX", "AU", 2},
+	{"GE", "GB", 1},
+	{"ID", "MW", 0},
+	{"KI", "AU", 2},
+	{"NP", "SA", 0},
+	{"WS", "SA", 0},
+	{"LR", "BR", 0},
+	{"ZM", "IN", 0},
+	{"AN", "AG", 0},
+	{"AI", "AS", 0},
+	{"BM", "AS", 0},
+	{"DZ", "IL", 0},
+	{"LC", "AG", 0},
+	{"MF", "BY", 0},
+	{"GY", "CU", 0},
+	{"LA", "GB", 1},
+	{"LB", "BR", 0},
+	{"MA", "IL", 0},
+	{"MO", "BD", 0},
+	{"MW", "BD", 0},
+	{"QA", "BD", 0},
+	{"TR", "GB", 1},
+	{"TZ", "BF", 0},
+	{"VN", "BR", 0},
+	{"JO", "XZ", 1},
+	{"PG", "XZ", 1},
+	{"SA", "XZ", 1},
 #endif
 	{"UA", "UA", 2}
 };
